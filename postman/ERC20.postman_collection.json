@@ -1,0 +1,253 @@
+{
+	"info": {
+		"_postman_id": "1bcbb2eb-4df6-491f-a7af-3918acdcc12f",
+		"name": "ERC20",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "mint",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"toAddress\": \"0x6F21FdfD6416DE7fC26ea78c5aFc5de902AbCfC8\",\r\n    \"amount\": 100\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/mint/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"mint",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "approve",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"data\":{\r\n        \"spender\": \"0x6F21FdfD6416DE7fC26ea78c5aFc5de902AbCfC8\",\r\n        \"amount\": 50\r\n    }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/approve/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"approve",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "increaseAllowance",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"data\":{\r\n        \"spender\": \"0x6F21FdfD6416DE7fC26ea78c5aFc5de902AbCfC8\",\r\n        \"addedValue\": 50\r\n    }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/increaseAllowance",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"increaseAllowance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "decreaseAllowanceUser",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"data\":{\r\n        \"spender\": \"0x6F21FdfD6416DE7fC26ea78c5aFc5de902AbCfC8\",\r\n        \"subtractedValue\": 50\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/decreaseAllowance",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"decreaseAllowance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "transferamount",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "transferFromOnetoAnother",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"data\":{\r\n        \"from\": \"0x6F21FdfD6416DE7fC26ea78c5aFc5de902AbCfC8\",\r\n        \"to\":\"0x5c14b00Fb41eB677899BC331C2417040960beAc6\",\r\n        \"amount\": 10\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/transferFrom",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"transferFrom"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "transferOwnershiptoanotheruser",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"data\":{\r\n        \"NewOwner\": \"0x6F21FdfD6416DE7fC26ea78c5aFc5de902AbCfC8\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/transferOwnership",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"transferOwnership"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "burn",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "burnTokenfromanotheruser",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"data\":{\r\n        \"account\": \"0x6F21FdfD6416DE7fC26ea78c5aFc5de902AbCfC8\",\r\n        \"amount\": 20\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/burnTokenfrom",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"burnTokenfrom"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "pausecontact",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "unpausecontract",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
