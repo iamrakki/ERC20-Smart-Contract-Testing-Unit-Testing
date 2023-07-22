@@ -58,4 +58,4 @@ Use the Following Command to run testing.
 
 ## Screeshot of Testing 👀
 
-![Screesnshots](Screenshot/ScreenshotERC20.png)
+![Screesnshots](Screenshots/ScreenshotERC20.png)
